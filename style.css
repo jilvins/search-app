@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: slategrey
+
+}
+
+#mainBody {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #944FD6;
+}
+
+#searchBox {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #D6944F;
+    flex-direction: column;
+}
+#searchBox label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+#searchInput {
+    background-color: #D64F91;
+    color: seashell;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+#addInput {
+    background-color: royalblue;
+    color: seashell;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+
+}
+#addBox {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-content: space-around;
+}
+#addBox label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#contentBox {
+    display: block;
+    padding: 10px;
+}
+
+#contentBox .content {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-width:5px;  
+    border-style:outset;
+}
