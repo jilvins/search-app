@@ -1,4 +1,6 @@
-document.getElementById('addhInput')
+let addInput = document.getElementById('addInput')
+let contentBox = document.getElementById('contentBox')
+let addBox = document.getElementById('addBox')
 document.getElementById('searchInput').addEventListener('keyup', function(event) {
     let searchPhrase = event.target.value.toLowerCase();
     let textForSearch = document.getElementsByClassName('content');
@@ -14,6 +16,23 @@ document.getElementById('searchInput').addEventListener('keyup', function(event)
         
     }
 });
-document.getElementById('addhInput')
-document.getElementById('addText')
-document.getElementById('contentBox')
+ 
+
+function addSearch (event) {
+    
+    event.preventDefault();
+    const newLi = document.createElement('li')
+    newLi.className = 'content' 
+    newLi.innerText = addInput.value
+    contentBox.appendChild(newLi)
+    addInput.value = ''
+    
+}
+function removeElement () {
+    contentBox.removeChild(contentBox.childNodes[0])
+}
+
+addBox.addEventListener('submit', addSearch)
+   
+
+

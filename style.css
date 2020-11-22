@@ -13,8 +13,8 @@ html, body {
 }
 
 #searchBox {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
     padding: 20px;
     background-color: #D6944F;
     flex-direction: column;
@@ -31,15 +31,18 @@ html, body {
     height: 40px;
     font-size: 20px;
     border-radius: 25px;
+    text-align: center;
 }
 #addInput {
     background-color: royalblue;
-    color: seashell;
+    color: white;
     width: 300px;
     height: 40px;
     font-size: 20px;
     border-radius: 25px;
     margin-bottom: 10px;
+    text-align: center;
+    
 
 }
 #addBox {
@@ -68,4 +71,15 @@ html, body {
     list-style-type: none;
     border-width:5px;  
     border-style:outset;
+}
+
+::placeholder {
+    color: white;
+}
+
+#addText, #removeText  {
+    background-color: teal;
+    border-radius: 25px;
+    width: 80px;
+    height: 40px;
 }

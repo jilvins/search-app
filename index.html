@@ -7,11 +7,13 @@
     <div id="searchBox">
         <label for="searchInput">Search</label>
         <input id="searchInput" type="text">
-        <div id="addBox">
-        <label for="addhInput">Add text</label>
-        <input id="addInput" type="text">
-        <button id="addText">Add text</button>
-        </div>
+        <form id="addBox">
+        <textarea id="addInput" type="text" placeholder="type your text"> </textarea>
+        <button id="addText" type="submit">Add text</button>
+        </form>
+        <button id="removeText" onclick="removeElement()">Remove text</button>
+
+        
     </div>
     
         <ul id="contentBox">
