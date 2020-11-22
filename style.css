@@ -10,23 +10,20 @@ html, body {
     margin: 0 auto;
     margin-top: 20px;
     background-color: #944FD6;
+    padding: 25px;
 }
 
 #searchBox {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding: 20px;
     background-color: #D6944F;
     flex-direction: column;
 }
-#searchBox label {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 15px;
-}
+
 #searchInput {
-    background-color: #D64F91;
-    color: seashell;
+    background-color: royalblue;
+    color: white;
     width: 300px;
     height: 40px;
     font-size: 20px;
@@ -40,22 +37,9 @@ html, body {
     height: 40px;
     font-size: 20px;
     border-radius: 25px;
-    margin-bottom: 10px;
     text-align: center;
-    
+}
 
-}
-#addBox {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    align-content: space-around;
-}
-#addBox label {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 15px;
-}
 
 #contentBox {
     display: block;
@@ -82,4 +66,9 @@ html, body {
     border-radius: 25px;
     width: 80px;
     height: 40px;
+    
+}
+#removeText {
+    position: relative;
+    left: 650px;
 }
